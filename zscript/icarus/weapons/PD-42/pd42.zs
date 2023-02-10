@@ -136,7 +136,7 @@ class HDPDFour : HDWeapon {
 			}
 		}
 
-		sb.DrawWepCounter(hdw.weaponStatus[PDS_FIREMODE], -25, -10, "RBRSA3A7", "STBURAUT", "STFULAUT");
+		sb.DrawWepCounter(hdw.weaponStatus[PDS_FIREMODE], -25, -10, "STSEMAUT", "STBURAUT", "STFULAUT");
 	}
 
 	override string GetHelpText() {
@@ -712,7 +712,7 @@ class HDPDFourMag : HDMagAmmo {
 
 	override string, string, name, double GetMagSprite(int thismagamt)
 	{
-		return (thismagamt > 0) ? "PDMGA0" : "PDMGB0", "RBRSBRN", "FourMilAmmo", 1.0;
+		return (thismagamt > 0) ? "PDMGA0" : "PDMGB0", "4RNDA0", "FourMilAmmo", 1.0;
 	}
 
 	override void GetItemsThatUseThis() {
