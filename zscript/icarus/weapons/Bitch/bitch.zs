@@ -138,11 +138,11 @@ class HDBitch : HDWeapon
 		
 		if (hdw.WeaponStatus[BTProp_Flags] & BTF_RapidFire)
 		{
-			sb.DrawWepCounter(hdw.WeaponStatus[BTProp_Mode], -26, -5, "RBRSA3A7", "STBURAUT", "STFULAUT", "STHPRAUT");
+			sb.DrawWepCounter(hdw.WeaponStatus[BTProp_Mode], -26, -5, "STSEMAUT", "STBURAUT", "STFULAUT", "STHPRAUT");
 		}
 		else
 		{
-			sb.DrawWepCounter(hdw.WeaponStatus[BTProp_Mode], -26, -5, "RBRSA3A7", "STBURAUT", "STFULAUT");
+			sb.DrawWepCounter(hdw.WeaponStatus[BTProp_Mode], -26, -5, "STSEMAUT", "STBURAUT", "STFULAUT");
 		}
 	}
 
