@@ -95,7 +95,7 @@ class HDFenris : HDCellWeapon
 			sb.DrawNum(hpl.CountInv("HDBattery"), -46, -8, sb.DI_SCREEN_CENTER_BOTTOM);
 		}
 		
-		sb.DrawWepCounter(hdw.WeaponStatus[FNProp_Mode], -15, -15, "STFULAUT", "RBRSA3A7");
+		sb.DrawWepCounter(hdw.WeaponStatus[FNProp_Mode], -15, -15, "STFULAUT", "STSEMAUT");
 		
 		int BatteryCharge = GetRealBatteryCharge(true);
 		if (BatteryCharge > 0)
