@@ -107,7 +107,7 @@ class HDNyx : HDHandgun
 			sb.DrawRect(-19, -11, 3, 1);
 		}
 		
-		sb.DrawWepCounter(hdw.WeaponStatus[NXProp_Mode], -22, -10, "RBRSA3A7", "STBURAUT");
+		sb.DrawWepCounter(hdw.WeaponStatus[NXProp_Mode], -22, -10, "STSEMAUT", "STBURAUT");
 	}
 
 	override void DrawSightPicture(HDStatusBar sb, HDWeapon hdw, HDPlayerPawn hpl, bool sightbob, vector2 bob, double fov, bool scopeview, actor hpc, string whichdot)
