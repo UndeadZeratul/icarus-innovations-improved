@@ -114,7 +114,7 @@ class HDUMP : HDWeapon
 			sb.DrawRect(-19, -11, 3, 1);
 		}
 		
-		sb.DrawWepCounter(hdw.WeaponStatus[UMProp_Mode], -22, -10, "RBRSA3A7", "STFULAUT");
+		sb.DrawWepCounter(hdw.WeaponStatus[UMProp_Mode], -22, -10, "STSEMAUT", "STFULAUT");
 	}
 
 	override void DrawSightPicture(HDStatusBar sb, HDWeapon hdw, HDPlayerPawn hpl, bool sightbob, vector2 bob, double fov, bool scopeview, actor hpc, string whichdot)
