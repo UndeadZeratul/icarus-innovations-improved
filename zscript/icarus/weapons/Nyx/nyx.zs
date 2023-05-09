@@ -432,7 +432,7 @@ class HDNyxMag : HDMagAmmo
 {
 	override string, string, name, double GetMagSprite(int thismagamt)
 	{
-		return (thismagamt > 0) ? "NYXMA0" : "NYXMB0", "PRNDA0", "HDRevolverAmmo", 1.0;
+		return (thismagamt > 0) ? "NYXMA0" : "NYXMB0", "3RNDA0", "HDRevolverAmmo", 1.0;
 	}
 
 	override void GetItemsThatUseThis()
