@@ -300,7 +300,7 @@ class HDMBR : HDWeapon
 
 		if (hdw.WeaponStatus[BRProp_Flags] & BRF_FireSelector)
 		{
-			sb.DrawWepCounter(hdw.WeaponStatus[BRProp_Firemode], -22, -21, "RBRSA3A7", "STFULAUT");
+			sb.DrawWepCounter(hdw.WeaponStatus[BRProp_Firemode], -22, -21, "STSEMAUT", "STFULAUT");
 		}
 		if (hdw.WeaponStatus[BRProp_Mag] > 0)
 		{
