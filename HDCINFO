@@ -1,6 +1,7 @@
 // Weapon Backpack Spawn Pool Filters
 addBPSpawnPoolFilter => { "name": "HDBarracuda", "allowed": "#barracuda_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDBitch", "allowed": "#bitch_allowBackpacks" }
+addBPSpawnPoolFilter => { "name": "HDDEagle", "allowed": "#deagle_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDFenris", "allowed": "#fenris_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDFlamethrower", "allowed": "#flamenwerfer_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDFrontier", "allowed": "#frontiersman_allowBackpacks" }
@@ -14,6 +15,7 @@ addBPSpawnPoolFilter => { "name": "HDUMP", "allowed": "#ump45_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDUSP", "allowed": "#usp45_allowBackpacks" }
 
 // Ammo Backpack Spawn Pool Filters
+addBPSpawnPoolFilter => { "name": "HDDEagleMag", "allowed": "#deaglemag_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDGasTank", "allowed": "#gastank_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDMBRMagHeavy", "allowed": "#mbrmagheavy_allowBackpacks" }
 addBPSpawnPoolFilter => { "name": "HDMBRMagLight", "allowed": "#mbrmaglight_allowBackpacks" }
@@ -28,6 +30,7 @@ addBPSpawnPoolFilter => { "name": "HDUSPMag", "allowed": "#usp45mag_allowBackpac
 addSpawnTableSingleEntry => { "tableName": "ShotgunReplaces", "name": "BarracudaRandom", "weight": "#barracuda_hunter_spawn_bias", "persists": "#barracuda_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "SuperShotgunReplaces", "name": "BarracudaRandom", "weight": "#barracuda_slayer_spawn_bias", "persists": "#barracuda_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "ChaingunReplaces", "name": "BitchRandom", "weight": "#bitch_chaingun_spawn_bias", "persists": "#bitch_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "DEagleRandom", "weight": "#deagle_pistol_spawn_bias", "persists": "#deagle_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "PlasmaRifleReplaces", "name": "FenrisRandom", "weight": "#fenris_plasma_spawn_bias", "persists": "#fenris_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "RocketLauncherReplaces", "name": "FlamethrowerSpawner", "weight": "#flamenwerfer_launcher_spawn_bias", "persists": "#flamenwerfer_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "BFG9000Replaces", "name": "FlamethrowerSpawner", "weight": "#flamenwerfer_bfg_spawn_bias", "persists": "#flamenwerfer_persistent_spawning" }
@@ -54,6 +57,7 @@ addSpawnTableSingleEntry => { "tableName": "PistolReplaces", "name": "USPRandom"
 addSpawnTableSingleEntry => { "tableName": "ClipBoxReplaces", "name": "USPRandom", "weight": "#usp45_clipbox_spawn_bias", "persists": "#usp45_persistent_spawning" }
 
 // Handgun Drop Table
+addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDDEagle", "weight": "#deagle_pistol_spawn_bias", "chance": "16", "persists": "#deagle_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDGFBlaster", "weight": "#gfb9_pistol_spawn_bias", "chance": "16", "persists": "#gfb9_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDNCT", "weight": "#nct_pistol_spawn_bias", "chance": "16", "persists": "#nct_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDNyx", "weight": "#nyx_pistol_spawn_bias", "chance": "16", "persists": "#nyx_persistent_spawning" }
@@ -62,6 +66,7 @@ addSpawnTableSingleEntry => { "tableName": "HDHandgunRandomDrop", "name": "HDUSP
 // Ammo Spawn Pools
 addSpawnTableSingleEntry => { "tableName": "RocketAmmoReplaces", "name": "HDGasTank", "weight": "#gastank_rocket_spawn_bias", "persists": "#gastank_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "RocketBoxReplaces", "name": "HDGasTank", "weight": "#gastank_rocketbox_spawn_bias", "persists": "#gastank_persistent_spawning" }
+addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "HDDEagleMag", "weight": "#deaglemag_clipmag_spawn_bias", "persists": "#deaglemag_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "CellReplaces", "name": "HDGasTank", "weight": "#gastank_battery_spawn_bias", "persists": "#gastank_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "ClipReplaces", "name": "HDMBRMagHeavy", "weight": "#mbrmagheavy_clipmag_spawn_bias", "persists": "#mbrmagheavy_persistent_spawning" }
 addSpawnTableSingleEntry => { "tableName": "RocketAmmoReplaces", "name": "HDMBRMagHeavy", "weight": "#mbrmagheavy_rocket_spawn_bias", "persists": "#mbrmagheavy_persistent_spawning" }
@@ -79,6 +84,7 @@ addSpawnTableSingleEntry => { "tableName": "GreenArmorReplaces", "name": "HEVArm
 addSpawnTableSingleEntry => { "tableName": "BlueArmorReplaces", "name": "HEVArmour", "weight": "#hevarmour_bluearmour_spawn_bias", "persists": "#hevarmour_persistent_spawning" }
 
 // Ammo Usages
+addAmmoUser => { "ammoName": "HDRevolverAmmo", "name": "HDDEagle" }
 addAmmoUser => { "ammoName": "HDRevolverAmmo", "name": "HDNyx" }
 addAmmoUser => { "ammoName": "HD45ACPAmmo", "name": "HDUMP" }
 addAmmoUser => { "ammoName": "HD45ACPAmmo", "name": "HDUSP" }
@@ -103,6 +109,7 @@ addAmmoUser => { "ammoName": "HDGasTank", "name": "HDFlamethrower" }
 // AceCorp Weapon Crate Filters
 addWeaponCrateFilter => { "name": "HDBarracuda", "allowed": "#barracuda_allowBackpacks" }
 addWeaponCrateFilter => { "name": "HDBitch", "allowed": "#bitch_allowBackpacks" }
+addWeaponCrateFilter => { "name": "HDDEagle", "allowed": "#deagle_allowBackpacks" }
 addWeaponCrateFilter => { "name": "HDFenris", "allowed": "#fenris_allowBackpacks" }
 addWeaponCrateFilter => { "name": "HDFlamethrower", "allowed": "#flamenwerfer_allowBackpacks" }
 addWeaponCrateFilter => { "name": "HDFrontier", "allowed": "#frontiersman_allowBackpacks" }
@@ -118,6 +125,7 @@ addWeaponCrateFilter => { "name": "HDUSP", "allowed": "#usp45_allowBackpacks" }
 // Merchant Store Entries
 newMerchantStoreItem => { "enabled": "#hdm_enable_barracuda", "type": "weapon", "category": "$MERCH_CAT_BARRACUDA", "item": "HDBarracuda", "icon": "BSABA0", "displayName": "$MERCH_TAG_BARRACUDA", "basePrice": "750", "flavorText": "$MERCH_FLAVOR_BARRACUDA" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_bitch", "type": "weapon", "category": "$MERCH_CAT_BITCH", "item": "HDBitch", "icon": "BCHGZ0", "displayName": "$MERCH_TAG_BITCH", "basePrice": "520", "flavorText": "$MERCH_FLAVOR_BITCH" }
+newMerchantStoreItem => { "enabled": "#hdm_enable_deagle", "type": "weapon", "category": "$MERCH_CAT_DEAGLE", "item": "HDDEagle", "icon": "DBFTA0", "displayName": "$MERCH_TAG_DEAGLE", "basePrice": "420", "flavorText": "$MERCH_FLAVOR_DEAGLE" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_fenris", "type": "weapon", "category": "$MERCH_CAT_FENRIS", "item": "HDFenris", "icon": "FWRLDB", "displayName": "$MERCH_TAG_FENRIS", "basePrice": "540", "flavorText": "$MERCH_FLAVOR_FENRIS" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_flamenwerfer", "type": "weapon", "category": "$MERCH_CAT_FLAMENWERFER", "item": "HDFlamethrower", "icon": "WFLMA0", "displayName": "$MERCH_TAG_FLAMENWERFER", "basePrice": "900", "flavorText": "$MERCH_FLAVOR_FLAMENWERFER" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_frontiersman", "type": "weapon", "category": "$MERCH_CAT_FRONTIERSMAN", "item": "HDFrontier", "icon": "FRMZA0", "displayName": "$MERCH_TAG_FRONTIERSMAN", "basePrice": "450", "flavorText": "$MERCH_FLAVOR_FRONTIERSMAN" }
@@ -137,6 +145,7 @@ newMerchantStoreItem => { "enabled": "#hdm_enable_wallet", "type": "item", "cate
 newMerchantStoreItem => { "enabled": "#hdm_enable_repairspray", "type": "item", "category": "$MERCH_CAT_REPAIRSPRAY", "item": "HDWD40", "icon": "SPRAY0", "displayName": "$MERCH_TAG_REPAIRSPRAY", "basePrice": "150", "flavorText": "$MERCH_FLAVOR_REPAIRSPRAY" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_hevarmour", "type": "item", "category": "$MERCH_CAT_HEVARMOUR", "item": "HEVArmour", "icon": "HEVAA0", "displayName": "$MERCH_TAG_HEVARMOUR", "basePrice": "230", "flavorText": "$MERCH_FLAVOR_HEVARMOUR" }
 
+newMerchantStoreItem => { "enabled": "#hdm_enable_deaglemag", "type": "mag", "category": "$MERCH_CAT_DEAGLEMAG", "item": "HDDEagleMag", "icon": "DGLMA0", "displayName": "$MERCH_TAG_DEAGLEMAG", "basePrice": "4", "flavorText": "$MERCH_FLAVOR_DEAGLEMAG" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_mbrmagheavy", "type": "mag", "category": "$MERCH_CAT_MBRMAGHEAVY", "item": "HDMBRMagHeavy", "icon": "5HMGA0", "displayName": "$MERCH_TAG_MBRMAGHEAVY", "basePrice": "40", "flavorText": "$MERCH_FLAVOR_MBRMAGHEAVY" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_mbrmaglight", "type": "mag", "category": "$MERCH_CAT_MBRMAGLIGHT", "item": "HDMBRMagLight", "icon": "5LMGA0", "displayName": "$MERCH_TAG_MBRMAGLIGHT", "basePrice": "25", "flavorText": "$MERCH_FLAVOR_MBRMAGLIGHT" }
 newMerchantStoreItem => { "enabled": "#hdm_enable_nyxmag", "type": "mag", "category": "$MERCH_CAT_NYXMAG", "item": "HDNyxMag", "icon": "NYXMA0", "displayName": "$MERCH_TAG_NYXMAG", "basePrice": "5", "flavorText": "$MERCH_FLAVOR_NYXMAG" }
